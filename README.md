@@ -44,7 +44,10 @@ argument is not used to perform any distant connection.
 Important
 ---------
 
-This is a **local check**, so use it with **NRPE** or **check_by_ssh** or such tools.
+  * This is a **local check**, so use it with **NRPE** or **check_by_ssh** or such tools.
+  * warning and critical thresolds are expressed in **minutes**, the default values are:
+    * warning: 26 hours so 1560 minutes
+    * critical: 30 hours so 1800 minutes
 
 Examples
 --------
