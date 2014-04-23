@@ -130,7 +130,7 @@ class CheckBurp(object):
         ctime = time.localtime()
         ctime = datetime.datetime(*ctime[:6])
         diff = ctime-btime
-        self.diff_min = diff.seconds/60
+        self.diff_min = int((diff.seconds + (diff.days * 24 * 3600))/60)
         self.diff_human = ('{0} day(s) {1:02d} hour(s) {2:02d} '
                            'minute(s)').format(diff.days,
                                                diff.seconds//3600,
