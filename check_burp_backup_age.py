@@ -28,7 +28,7 @@ class CheckBurp(object):
 
     def __init__(self):
         self._program = "check_burp_backup_age"
-        self._version = "0.1"
+        self._version = "1.0"
         self._author = "Régis Leroy (regilero)"
         self._nick = "BURP"
         self._ok = 0
